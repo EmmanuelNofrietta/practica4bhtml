@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.cdnfonts.com/css/noto-sans-bamum" rel="stylesheet">
+                
+    <title>Emmanuel Nofrietta</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(235, 4, 4);
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(0, 102, 255) /*Color de las letras*/;
+            text-align: center;
+        }
+    
+        .perfil{
+            margin: 30px auto;
+            width: 80%;
+            max-width: 650px;
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            box-shadow: 0 10px 10px #ff0101;
+        }
+
+        .foto-perfil{
+            
+            width: 150px;
+            height: auto;
+            border-radius: 100%;
+            color: #000;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+    <div class="perfil">
+        <img src="img/oerfil.jpg" alt="foto de perfil">
+        <h1 id="Nombre:" style="font-family: 'Noto Sans Bamum', sans-serif;">Angel Emmanuel Nofrietta Garcia</h1>
+        <p id="Formacion:" style="font-family: 'Noto Sans Bamum', sans-serif;">Centro de estudios tecnologicos industrial y de servicios 131</p>
+        <h2 style="font-family: 'Noto Sans Bamum', sans-serif;">Me gusta escuchar musica, jugar videojuegos, y estar con mi novia</h2>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+            document.getElementById("Nombre"),
+            textContent="Lesly Martinez";
+            document.getElementById("Formacion"), textContent="Preparatoria";
+        })
+    </script>
+</body>
+</html>
