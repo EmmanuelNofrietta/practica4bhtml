@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/neon-nanoborg" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/tx-jello" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/short-stack" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body style="font-family: 'Times New Roman', serif;">
+    <div style="margin: 24px;">
+      <nav class="nav navbar-light" style="background-color: #E21728;">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" style="color: rgb(0, 0, 0);">Inicio</a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="nav navbar-nav">
+            <li class="nav-item dropdown">
+             
+              <a class="nav-link dropdown-toggle" href="#" 
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" style="color: rgb(255, 255, 255);">Unidad 1</a>
+           <div class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink">
+             <a class="dropdown-ites" href="Perfil.HTML" style="color: rgb(0, 0, 0);">Perfil</a>
+             <a class="dropdown-ites" href="Calculadora.html" style="color: rgb(0, 0, 0);">Calculadora</a>
+             <a class="dropdown-ites" href="Tienda.html" style="color: rgb(0, 0, 0);">Tienda</a>
+             <a class="dropdown-ites" href="Menu.html" style="color: rgb(0, 0, 0);">Menu</a>
+            </div>
+         </li>
+         <li>
+           <a class="nav-link dropdown-toggle" href="#" 
+              id="navbarDropdownMenuLink2"
+              data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" style="color: white;">Unidad 2</a>
+           
+           <div class="dropdown-menu"
+           aria-labelledby="navbarDropdownMenuLink2">
+         <a class="dropdown-ites" href="Primavera.html" style="font-family: 'Times New Roman', serif;" color:black;>Primavera</a><br>
+         <a class="dropdown-ites" href="tiendapedido1.html" style="font-family: 'Times New Roman', serif;" color:black;>Tienda Pedido</a><br>
+              
+           </div>
+         </li>
+         <li>
+           <a class="nav-link dropdown-toggle" href="#" 
+              id="navbarDropdownMenuLink3"
+              data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" style="color: white;">Unidad 3</a>
+           <div class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink3">
+           </div>
+         </li>
+       </ul>
+     </nav>
+
+   <body>
+       <!-------Este div es los botones de la pagina----->
+     <div style="margin: 24px ;"></div>
+     </div>
+     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 0, 0);
+            margin: 0;
+            padding: 20px;
+            color: black;
+        }
+        h1{
+            color: black;
+            text-align: center;
+        }
+        button{
+            background-color: rgb(57, 56, 56);
+            color: antiquewhite;
+            padding: 10px 15px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover{
+            background-color: cornflowerblue;
+            color: black;
+        }
+        .seccion{
+            margin-bottom: 20px;
+        }
+        .seccion-header{
+            font-size: 18px;
+            color: cornflowerblue;
+            padding-bottom: 5px;
+            border-bottom: 1px solid rgb(96, 147, 230);
+            margin-bottom: 15px;
+        }
+        #productForm{
+          background-color: cornflowerblue;
+          border-radius: 8px;
+          box-shadow: 0 2px 15px grey ;
+          padding: 20px;
+          max-width: 800px;
+          margin: 20px auto;
+        }
+        select input [type="number"]{
+          width: 50%;
+          padding: 10px;
+          margin-top: 10px;
+          border: 1px solid cornflowerblue;
+          border-radius: 4px;
+        }
+        input[type="radio"]{
+          margin-right: 5px;
+        }
+        label{
+          font-weight: bold;
+          margin-top: 15px;
+        }
+     </style>
+     <h1 style="font-family: 'Times New Roman', serif;">Tiendita "Insanedee"</h1>
+
+     <form id="Orden">
+        <div class="seccion">
+            <label form="abarrotes">Abarrotes</label>
+            <select id="abarrotes" name="Abarrotes2">
+                <option value="cocacola">Coca-cola</option>
+                <option value="galletas">Galletas</option>
+                <option value="azucar">Azucar</option>
+                <option value="sal">Sal</option>
+                <option value="pozole">Pozole</option>
+                <option value="cafe">Cafe</option>
+                <option value="leche">Leche</option>
+                <option value="chicles">Chicles</option>
+                <option value="mayonesa">Mayonesa McCORMICK</option>
+                <option value="sabritas">Sabritas</option>
+            </select>
+            <div>
+                Cantidad:
+                <label><input type="radio" name="candidadAborrotes" value="1">1</label>
+                <label><input type="radio" name="candidadAborrotes" value="2">2</label>
+                <label><input type="radio" name="candidadAborrotes" value="3">3</label>
+                <label><input type="radio" name="candidadAborrotes" value="4">4</label>
+                <label><input type="radio" name="candidadAborrotes" value="5">5</label>
+                <label><input type="radio" name="candidadAborrotes" value="6">6</label>
+                <label><input type="radio" name="candidadAborrotes" value="7">7</label>
+                <label><input type="radio" name="candidadAborrotes" value="8">8</label>
+                <label><input type="radio" name="candidadAborrotes" value="9">9</label>
+                <label><input type="radio" name="candidadAborrotes" value="10">10</label>
+                <label><input type="radio" name="candidadAborrotes" value="11">11</label>
+                <label><input type="radio" name="candidadAborrotes" value="12">12</label>
+            </div>
+        </div>
+         
+        <div class="seccion">
+            <label form="enlatados">Enlatados:</label>    
+            <select name="enlatados" id="enlatados">
+                <option value="frijoles">Frijoles</option>
+                <option value="elote">Elotes</option>
+                <option value="atun">Atun Dolores</option>
+                <option value="vegetales">Vegetales</option>
+                <option value="chile">Chiles</option>
+                <option value="sopas">Sopas</option>
+                <option value="aceitunas">Aceitunas</option>
+                <option value="sardinas">Sardinas</option>
+                <option value="frutas">Frutas</option>
+                <option value="chicharos">Chicharos</option>
+            </select>  
+            <div>
+              Cantidad:
+              <label><input type="radio" name="candidadAbarrotes" value="1">1</label>
+              <label><input type="radio" name="candidadAbarrotes" value="2">2</label>
+              <label><input type="radio" name="candidadAbarrotes" value="3">3</label>
+              <label><input type="radio" name="candidadAbarrotes" value="4">4</label>
+              <label><input type="radio" name="candidadAbarrotes" value="5">5</label>
+            </div>
+          </div>
+          <div class="seccion">
+            <label form="confiteria">Confiteria</label>
+            <select id="conofiteria" name="confiteria">
+                <option value="ferrero rocher">Ferrero Rocher</option>
+                <option value="chicle">Chicle</option>
+                <option value="lucas sandia">Lucas Sandia</option>
+                <option value="gomitas">Gomitas</option>
+                <option value="paletas">Paleta</option>
+                <option value="mazapan">Mazapan</option>
+                <option value="caramelos">Caramelos</option>
+                <option value="sabritas">Sabritas</option>
+                <option value="pastas de fruta">Pastas de Frutas</option>
+                <option value="malvadiscos">Malvadiscos</option>
+            </select>
+            <div>
+                Cantidad:
+                <label><input type="radio" name="candidadAborrotes" value="1">1</label>
+                <label><input type="radio" name="candidadAborrotes" value="2">2</label>
+                <label><input type="radio" name="candidadAborrotes" value="3">3</label>
+                <label><input type="radio" name="candidadAborrotes" value="4">4</label>
+                <label><input type="radio" name="candidadAborrotes" value="5">5</label>
+                <label><input type="radio" name="candidadAborrotes" value="6">6</label>
+                <label><input type="radio" name="candidadAborrotes" value="7">7</label>
+                <label><input type="radio" name="candidadAborrotes" value="8">8</label>
+                <label><input type="radio" name="candidadAborrotes" value="9">9</label>
+                <label><input type="radio" name="candidadAborrotes" value="10">10</label>
+                <label><input type="radio" name="candidadAborrotes" value="11">11</label>
+                <label><input type="radio" name="candidadAborrotes" value="12">12</label>
+            </div>
+        </div>
+         
+        <div class="seccion">
+          <label form="botanas">Botanas:</label>    
+          <select name="botanas" id="botanas">
+              <option value="sabritas">Sabritas</option>
+              <option value="cacahuates">Cacahuates</option>
+              <option value="ruffles">Ruffles</option>
+              <option value="cheetos">Cheetos</option>
+              <option value="takis">Takis</option>
+              <option value="churrumais">Churrumais</option>
+              <option value="Tostitos">Tostitos</option>
+              <option value="sabritas adobadas">Sabritas Adobadas</option>
+              <option value="paketaxo">Paketaxo</option>
+              <option value="rancheritos">Ranchetitos</option>
+          </select>  
+          <div>
+            Cantidad:
+            <label><input type="radio" name="candidadAbarrotes" value="1">1</label>
+            <label><input type="radio" name="candidadAbarrotes" value="2">2</label>
+            <label><input type="radio" name="candidadAbarrotes" value="3">3</label>
+            <label><input type="radio" name="candidadAbarrotes" value="4">4</label>
+            <label><input type="radio" name="candidadAbarrotes" value="5">5</label>
+          </div>
+        </div>
+
+        <div class="seccion">
+          <label form="Frutas y verduras">Frutas y verduras:</label>    
+          <select name="Frutas y verduras" id="Frutas y verduras">
+              <option value="aguacate">aguacate</option>
+              <option value="ajo">ajo</option>
+              <option value="cebolla">cebolla</option>
+              <option value="chile">chile</option>
+              <option value="cilantro/perejil">cilantro/perejil</option>
+              <option value="jitomate">jitomate</option>
+              <option value="papas">papas</option>
+              <option value="Limones">Limones</option>
+              <option value="Manzanas">Manzanas</option>
+              <option value="Naranjas">Naranjas</option>
+          </select>  
+          <div>
+            Cantidad:
+            <label><input type="radio" name="candidadAbarrotes" value="1">1</label>
+            <label><input type="radio" name="candidadAbarrotes" value="2">2</label>
+            <label><input type="radio" name="candidadAbarrotes" value="3">3</label>
+            <label><input type="radio" name="candidadAbarrotes" value="4">4</label>
+            <label><input type="radio" name="candidadAbarrotes" value="5">5</label>
+          </div>
+        </div>
+
+        <div class="seccion">
+          <label form="Harinas">Harinas:</label>    
+          <select name="Harinas" id="Harinas">
+              <option value="Tortillas de harina/maiz">Tortillas de harina/maiz</option>
+              <option value="Galletas dulces">Galletas dulces</option>
+              <option value="Pastelillos">Pastelillos</option>
+              <option value="Pan de caja/dulce/molido/tostado">Pan de caja/dulce/molido/tostado</option>
+              <option value="Pan dulce">Pan dulce</option>
+             
+          </select>  
+          <div>
+            Cantidad:
+            <label><input type="radio" name="candidadAbarrotes" value="1">1</label>
+            <label><input type="radio" name="candidadAbarrotes" value="2">2</label>
+            <label><input type="radio" name="candidadAbarrotes" value="3">3</label>
+            <label><input type="radio" name="candidadAbarrotes" value="4">4</label>
+            <label><input type="radio" name="candidadAbarrotes" value="5">5</label>
+          </div>
+        </div>
+
+        <div class="seccion">
+          <label form="Bebidas">Bebidas:</label>    
+          <select name="Bebidas" id="Bebidas">
+              <option value="Agua mineral/natural/saborizada">Agua mineral/natural/saborizada</option>
+              <option value="jarabes">jarabes</option>
+              <option value="jugos/nectares">jugos/nectares</option>
+              <option value="naranjadas">naranjadas</option>
+              <option value="bebidas de soya/en polvo/infantiles/isotonicas">bebidas de soya/en polvo/infantiles/isotonicas</option>
+              <option value="energizantes">energizantes</option>
+              <option value="Refrescos">Refrescos</option>
+          </select>  
+          <div>
+            Cantidad:
+            <label><input type="radio" name="candidadAbarrotes" value="1">1</label>
+            <label><input type="radio" name="candidadAbarrotes" value="2">2</label>
+            <label><input type="radio" name="candidadAbarrotes" value="3">3</label>
+            <label><input type="radio" name="candidadAbarrotes" value="4">4</label>
+            <label><input type="radio" name="candidadAbarrotes" value="5">5</label>
+          </div>
+        </div>
+
+        <div class="seccion">
+          <label form="Bebidas alcoholicas">Bebidas alcoholicas:</label>    
+          <select name="Bebidas alcoholicas" id="Bebidas alcoholicas">
+              <option value="bebidas preparadas">bebidas preparadas</option>
+              <option value="cerveza">cerveza</option>
+              <option value="anis">anis</option>
+              <option value="Brandy">Brandy</option>
+              <option value="Ginebra">Ginebra</option>
+              <option value="Cordiales">Cordiales</option>
+              <option value="Mezcal">Mezcal</option>
+              <option value="Jerez">Jerez</option>
+              <option value="Ron">Ron</option>
+              <option value="Tequila">Tequila</option>
+              <option value="Sidra">Sidra</option>
+              <option value="Whisky">Whisky</option>
+              <option value="Vodka">Vodka</option>
+          </select>  
+          <div>
+            Cantidad:
+            <label><input type="radio" name="candidadAbarrotes" value="1">1</label>
+            <label><input type="radio" name="candidadAbarrotes" value="2">2</label>
+            <label><input type="radio" name="candidadAbarrotes" value="3">3</label>
+            <label><input type="radio" name="candidadAbarrotes" value="4">4</label>
+            <label><input type="radio" name="candidadAbarrotes" value="5">5</label>
+          </div>
+        </div>
+        <div class="seccion">
+          <label form="Alimentos preparados">Alimentos preparados:</label>    
+          <select name="Alimentos preparados" id="Alimentos preparados">
+              <option value="Pastas listas para comer">Pastas listas para comer</option>
+              <option value="Sopas en vaso">Sopas en vaso</option>
+              <option value="Carnes y embutidos">Carnes y embutidos</option>
+              <option value="Salchichas">Salchichas</option>
+              <option value="Mortadela">Mortadela</option>
+              <option value="Tocino">Tocino</option>
+              <option value="Jamon">Jamon</option>
+              <option value="Manteca">Manteca</option>
+              <option value="Chorizo">Chorizo</option>
+              <option value="Carne de puerco/res/pollo">Carne de puerco/res/pollo</option>
+             
+          </select>  
+          <div>
+            Cantidad:
+            <label><input type="radio" name="candidadAbarrotes" value="1">1</label>
+            <label><input type="radio" name="candidadAbarrotes" value="2">2</label>
+            <label><input type="radio" name="candidadAbarrotes" value="3">3</label>
+            <label><input type="radio" name="candidadAbarrotes" value="4">4</label>
+            <label><input type="radio" name="candidadAbarrotes" value="5">5</label>
+          </div>
+        </div>
+        <div class="seccion">
+          <label form="Medicamentos OTC">Medicamentos OTC:</label>    
+          <select name="Medicamentos OTC" id="Medicamentos OTC">
+              <option value="Suero">Suero</option>
+              <option value="Agua oxigenada">Agua oxigenada</option>
+              <option value="Preservayivos">Preservativos</option>
+              <option value="Alcohol">Alcohol</option>
+              <option value="Gasas">Gasas</option>
+              <option value="Analgesicos">Analgesicos</option>
+              <option value="Antigripales">Antogripales</option>
+              <option value="Antiacidos">Antiacidos</option>
+              
+          </select>  
+          <div>
+            Cantidad:
+            <label><input type="radio" name="candidadAbarrotes" value="1">1</label>
+            <label><input type="radio" name="candidadAbarrotes" value="2">2</label>
+            <label><input type="radio" name="candidadAbarrotes" value="3">3</label>
+            <label><input type="radio" name="candidadAbarrotes" value="4">4</label>
+            <label><input type="radio" name="candidadAbarrotes" value="5">5</label>
+          </div>
+        </div>
+        <div class="seccion">
+          <label form="Higiene personal">Higiene personal:</label>    
+          <select name="Higiene Personal" id="Higiene Personal">
+              <option value="Toallas humedas">Toallas humedas</option>
+              <option value="Aceite para bebe">Aceite para bebe</option>
+              <option value="Toallas femeninas">Toallas Femeninas</option>
+              <option value="Algodon">Algodon</option>
+              <option value="Tinte para el cabello">Tinte para el cabello</option>
+              <option value="biberones">biberones</option>
+              <option value="Talco">Talco</option>
+              <option value="Cepillo de dientes">Cepillo de dientes</option>
+              <option value="Shampoo/acondicionador">Shampoo/acondicionador</option>
+              <option value="cotonetes">cotonetes</option>
+              <option value="Rastrillos">Rastrillos</option>
+              <option value="Crema corporal/facial">Crema corporal/facial</option>
+              <option value="Papel higienico">Papel higienico</option>
+              <option value="Crema para afeitar">Crema para afeitar</option>
+              <option value="Pañuelos faciales/desechables">Pañuelos faciales/desechables</option>
+              <option value="Dentrificos">Dentifricos</option>
+              <option value="Desodorantes en barra">Desodorantes en barra</option>
+              <option value="Maquillaje">Maquillaje</option>
+              <option value="Enjuague bucal">Enguaje bucal</option>
+              <option value="Lubricantes para labios">Lubricantes para labios</option>
+              <option value="Gel/spray">Gel/spray</option>
+              
+          </select>  
+          <div>
+            Cantidad:
+            <label><input type="radio" name="candidadAbarrotes" value="1">1</label>
+            <label><input type="radio" name="candidadAbarrotes" value="2">2</label>
+            <label><input type="radio" name="candidadAbarrotes" value="3">3</label>
+            <label><input type="radio" name="candidadAbarrotes" value="4">4</label>
+            <label><input type="radio" name="candidadAbarrotes" value="5">5</label>
+          </div>
+        </div>
+        <div class="seccion">
+          <label form="Uso domestico">Uso domestico:</label>    
+          <select name="Uso domestico" id="Uso domestico">
+              <option value="Suavizante de telas">Suavizante de telas</option>
+              <option value="Acido muriatico">Acido muriatico</option>
+              <option value="Sosa caustica">Sosa caustica</option>
+              <option value="Aluminio">Aluminio</option>
+              <option value="Pilas">Pilas</option>
+              <option value="Shampoo para ropa">Shampoo para ropa</option>
+              <option value="Servilletas">Servilletas</option>
+              <option value="Servitoallas">Servitoallas</option>
+              <option value="Aromatizantes">Aromatizantes</option>
+              <option value="cera para automovil">cera para automovil</option>
+              <option value="pastillas sanitarias">pastillas sanitarias</option>
+              <option value="Limpiadores liquidos">Limpiadores liquidos</option>
+              <option value="Cerillos">Cerillos</option>
+              <option value="Cloro/Blanqueador">Cloro/blanqueador</option>
+              <option value="Jabon en barra">Jabon en barra</option>
+              <option value="insecticidas">insecticidas</option>
+              <option value="Fibras limpiadoras">Fibras limpiadoras</option>
+              <option value="Desinfectantes">Desinfectantes</option>
+              <option value="Detergentes para trastes">Detergentes para trastes</option>
+              
+          </select>  
+          <div>
+            Cantidad:
+            <label><input type="radio" name="candidadAbarrotes" value="1">1</label>
+            <label><input type="radio" name="candidadAbarrotes" value="2">2</label>
+            <label><input type="radio" name="candidadAbarrotes" value="3">3</label>
+            <label><input type="radio" name="candidadAbarrotes" value="4">4</label>
+            <label><input type="radio" name="candidadAbarrotes" value="5">5</label>
+          </div>
+        </div>
+        <div class="seccion">
+          <label form="Congelados">Congelados:</label>    
+          <select name="Congelados" id="Congelados">
+              <option value="Paletas">Paletas</option>
+              <option value="Helados">Helados</option>
+              <option value="Verduras y frutas congeladas">Verduras y frutas congeladas</option>
+              <option value="Hielo">Hielo</option>
+              
+              
+          </select>  
+          <div>
+            Cantidad:
+            <label><input type="radio" name="candidadAbarrotes" value="1">1</label>
+            <label><input type="radio" name="candidadAbarrotes" value="2">2</label>
+            <label><input type="radio" name="candidadAbarrotes" value="3">3</label>
+            <label><input type="radio" name="candidadAbarrotes" value="4">4</label>
+            <label><input type="radio" name="candidadAbarrotes" value="5">5</label>
+          </div>
+        </div>
+        <div class="seccion">
+          <label form="Jarceria y productos de limpieza">Jarceria y productos de limpieza:</label>    
+          <select name="Jarceria y productos de limpieza" id="Jarceria y productos de limpieza">
+              <option value="Velas valadoras">Velas valadoras</option>
+              <option value="Cepillos de plastico">Cepillos de plastico</option>
+              <option value="Vasos desechables">Vasos desechables</option>
+              <option value="Cinta Adhesiva">Cinta Adhesiva</option>
+              <option value="Cucharas/tenedores/cuchillos de plastico">Cucharas/tenedores/cuchillos de plastico</option>
+              <option value="Escobas/trapeadores/mechudos">Escobas/trapeadores/mechudos</option>
+              <option value="Trampas para ratas">Trampas para ratas</option>
+              <option value="Extensiones">Extensiones</option>
+              <option value="Recogedor">Recogedor</option>
+              <option value="popotes">popotes</option>
+              <option value="platos desechables">platos desechables</option>
+              <option value="focos">focos</option>
+              <option value="Fusibles">Fusibles</option>
+              <option value="Jergas">Jergas</option>
+              <option value="Matamoscas">Matamoscas</option>
+              <option value="pegamento">pegamento</option>
+              <option value="mecate">mecate</option>
+             
+              
+          </select>  
+          <div>
+            Cantidad:
+            <label><input type="radio" name="candidadAbarrotes" value="1">1</label>
+            <label><input type="radio" name="candidadAbarrotes" value="2">2</label>
+            <label><input type="radio" name="candidadAbarrotes" value="3">3</label>
+            <label><input type="radio" name="candidadAbarrotes" value="4">4</label>
+            <label><input type="radio" name="candidadAbarrotes" value="5">5</label>
+          </div>
+        </div>
+        <div class="seccion">
+          <label form="Papeleria">Papeleria:</label>    
+          <select name="Papeleria" id="Papeleria">
+              <option value="Hojas">Hojas</option>
+              <option value="Lapices">Lapices</option>
+              <option value="Colores">Colores</option>
+              <option value="Libretas">Libretas</option>
+              <option value="Utiles escolares en general">Utiles escolares en general</option>
+              
+          </select>  
+          <div>
+            Cantidad:
+            <label><input type="radio" name="candidadAbarrotes" value="1">1</label>
+            <label><input type="radio" name="candidadAbarrotes" value="2">2</label>
+            <label><input type="radio" name="candidadAbarrotes" value="3">3</label>
+            <label><input type="radio" name="candidadAbarrotes" value="4">4</label>
+            <label><input type="radio" name="candidadAbarrotes" value="5">5</label>
+          </div>
+        </div>
+        <div class="seccion">
+          <label form="Otros">Otros:</label>    
+          <select name="Otros" id="Otros">
+              <option value="Tarjetas telefonicas">Tarjetas telefonicas</option>
+              <option value="Recargas moviles">Recargas moviles</option>
+              <option value="Cigarrillos">Cigarrillos</option>
+              <option value="Tarjetas pagadas">Tarjetas pagadas</option>
+              <option value="Giftcards">Giftcards</option>
+              
+          </select>  
+          <div>
+            Cantidad:
+            <label><input type="radio" name="candidadAbarrotes" value="1">1</label>
+            <label><input type="radio" name="candidadAbarrotes" value="2">2</label>
+            <label><input type="radio" name="candidadAbarrotes" value="3">3</label>
+            <label><input type="radio" name="candidadAbarrotes" value="4">4</label>
+            <label><input type="radio" name="candidadAbarrotes" value="5">5</label>
+          </div>
+        </div>
+
+          <button type="button" onclick="SubmitForm()">Realizar Pedido</button>
+     </form>
+     <script>
+        function SubmitForm(){
+            const formElements = document.getElementById ('orden');
+            const formData = new FormData(formElements);
+            const queryParams = new URLSearchParams();
+
+            for(let [key,value] of formData.entries()){
+                  queryParams.append(key,value);
+        }
+        window.location.href = `review_order.html${queryParams}`;
+    }
+     </script>
+</body>
+</html> 
